@@ -13,6 +13,7 @@
 
 <IfModule LiteSpeed>
 RewriteEngine On
+RewriteCond %{HTTP_USER_AGENT} \Go-http-client\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \b01h4x\.com\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \b360Spider\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \b404checker\b [NC,OR]
